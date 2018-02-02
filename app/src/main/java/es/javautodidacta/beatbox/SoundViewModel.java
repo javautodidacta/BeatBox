@@ -5,7 +5,7 @@ import android.databinding.Bindable;
 
 /**
  * This class is the View Model between
- * the View ({@code list_item_model.xml}) and the Model ({@link Sound}.
+ * the View ({@code list_item_model.xml}) and the Model ({@link Sound}).
  *
  * @author Miguel Callejón Berenguer
  * @version 2018.01

@@ -7,6 +7,7 @@ import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.Log;
+import android.widget.SeekBar;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,7 +50,13 @@ public class BeatBox {
         if(soundId == null) {
             return;
         }
-        mSoundPool.play(soundId, 1.0f, 1.0f, 1, 0, 1.0f);
+
+        mSoundPool.play(soundId, 1.0f, 1.0f,
+                        1, 0, (SingleFragmentActivity.mRate/100) * 2);
+    }
+
+    public void release() {
+        mSoundPool.release();
     }
 
     private void loadSounds() {
