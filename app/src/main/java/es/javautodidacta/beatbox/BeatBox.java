@@ -4,10 +4,8 @@ import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.media.AudioAttributes;
-import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.Log;
-import android.widget.SeekBar;
 
 import java.io.IOException;
 import java.util.ArrayList;
